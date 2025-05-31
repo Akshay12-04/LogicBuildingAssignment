@@ -15,14 +15,20 @@
 
 void Number(int iNo)
 {
-    int iCnt = 0 ;
-    int iMult = 1;
-    
-    for (iCnt = 1 ; iCnt <= iNo; iCnt++)
+    if (iNo < 50)
     {
-        iMult = 4 * iCnt ;
-        printf("%d \t ", iMult);
+        printf("Small");
     }
+    else if (iNo >= 50 && iNo <= 100)
+    {
+        printf("medium");
+    }
+    else
+    {
+        printf("large");
+    }
+    
+   
 }
 
 int main()
@@ -32,7 +38,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    Pattern(iValue);
+    Number(iValue);
 
     return 0;
 }
