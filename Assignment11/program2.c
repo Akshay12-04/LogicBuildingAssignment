@@ -19,8 +19,6 @@ void pattern(int iNo)
     {
         printf("%d\t",icnt);
         printf("#\t");
-
-
     }
 
 }
